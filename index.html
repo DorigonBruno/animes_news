@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <title>Animes</title>
+  <style>
+    .nav-link {
+      text-align: center;
+    }
+
+    .navbar-nav .nav-link.active {
+      color: #fff;
+    }
+
+    #animes {
+      margin-top: 100px;
+      padding: 50px;
+    }
+
+    #curiosidades {
+      margin-top: 30px;
+      padding: 50px;
+      margin-bottom: 20px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background: #eee;
+      z-index: 200;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    .imagem-meio,
+    .ultima-img {
+      height: 824px;
+    }
+
+    .container a {
+      text-decoration: none;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="./">
+          <h1>Animes News</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#animes">Animes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img class="d-block w-100"
+            src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2021/09/10/demon-slayer-capa.png" alt="" />
+          <div class="carousel-caption">
+            <h2>Kimetsu no Yaiba</h2>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="d-block w-100 imagem-meio"
+            src="https://br.web.img3.acsta.net/r_1920_1080/pictures/19/09/16/17/09/4903250.jpg" alt="" />
+          <div class="carousel-caption">
+            <h2>Vinland Saga</h2>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="d-block w-100 ultima-img"
+            src="https://img.elo7.com.br/product/zoom/1EC5B81/big-poster-do-anime-hunter-x-hunter-tamanho-90x-0-cm-lo005-nerd.jpg"
+            alt="" />
+          <div class="carousel-caption">
+            <h2>Hunter x Hunter</h2>
+          </div>
+        </div>
+      </div>
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button class="active" type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+
+  <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <section id="animes">
+      <h2 class="p-2 mb-4">Tipos de Animes</h2>
+      <div class="container">
+        <nav class="nav nav-tabs">
+          <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Shounem</button>
+          <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Seinem</button>
+        </nav>
+        <div class="tab-content">
+          <div id="aba1" class="tab-pane active">
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      Naruto
+                    </div>
+                    <img class="" src="./img/naruto.jpg" alt="">
+                    <div class="card-body">
+                      <p>Naruto Uzumaki é um menino que vive em Konohagakure no Sato ou simplesmente Konoha ou Vila
+                        Oculta da Folha, a vila ninja do País do Fogo. </p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/mMGm3LyqLQ" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      Hunter x Hunter
+                    </div>
+                    <img class="" src="./img/hunterxhunter2.jpg" alt="">
+                    <div class="card-body">
+                      <p>Monstros amedrontadores, criaturas exóticas, riquezas vastas, tesouros misteriosos, terras vis
+                        e terras inexploradas...</p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/lODCp5HGmb" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      One Piece
+                    </div>
+                    <img class="" src="./img/one_piece.jpg" alt="">
+                    <div class="card-body">
+                      <p>Houve um homem que conquistou tudo aquilo que o mundo tinha a oferecer, o lendário Rei dos
+                        Piratas, Gold Roger. </p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/O6vxJh4czp" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      Dragon Ball Z
+                    </div>
+                    <img class="" src="./img/dragon_ball.jpg" alt="">
+                    <div class="card-body">
+                      <p>O irmão de Son Goku (protagonista da série Dragon Ball) aparece na Terra e lhe informa que sua
+                        família pertence a outro planeta. </p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/c6OpnXQVIb" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="aba2" class="tab-pane">
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      Berserk
+                    </div>
+                    <img class="" src="./img/berserk.jpg" alt="">
+                    <div class="card-body">
+                      <p>Ele só confia em sua espada. Ele não tem um lar. Guts é um mercenário solitário em uma terra
+                        arrasada por uma guerra de cem anos.</p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/t29aqA8FRf" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      One Punch Man
+                    </div>
+                    <img class="" src="./img/one_punch.jpg" alt="">
+                    <div class="card-body">
+                      <p>O super-herói mais forte do mundo pode matar qualquer um com um só golpe. Mas, com uma vida sem
+                        desafios.</p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/zp8PW2TcRL" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      Vinland Saga
+                    </div>
+                    <img class="" src="./img/vinland_saga.jpg" alt="">
+                    <div class="card-body">
+                      <p>Por mil anos, os Vikings criaram nome e reputação formidáveis para si mesmos como as famílias
+                        mais fortes com uma sede por violência.</p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/UEOIWUExzW">Assista Aqui</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                  <div class="card">
+                    <div class="card-header">
+                      Hellsing
+                    </div>
+                    <img class="" src="./img/hellsing.jpg" alt="">
+                    <div class="card-body">
+                      <p>Vampiros existem. É dever da Hellsing, uma organização patrocinada pelo governo britânico,
+                        esconder esse fato assustador. </p>
+                      <a class="btn btn-primary" href="https://www.anroll.net/a/1CF1XmVL7I" target="_blank">Assista
+                        Aqui</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="curiosidades">
+      <h2 class="mb-5">Curiosidades</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button data-ebac="btn-teste" class="accordion-button fw-bold" data-bs-toggle="collapse"
+              data-bs-target="#resposta1">Quem criou Dragon Ball Z ?</button>
+          </div>
+          <div id="resposta1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <p>Dragon Ball Z (ドラゴンボールZ Doragon Bōru Zetto?) (geralmente abreviado como DBZ) foi uma série de animação
+                produzida pela Toei Animation. Baseada na série de mangá Dragon Ball escrita por Akira Toriyama, Dragon
+                Ball Z corresponde aos volumes 17 ao 42 do mangá que foi publicado na revista, Weekly Shonen Jump, de
+                1988 a 1995, e estreou no Japão na Fuji TV em 26 de abril de 1989, e terminou dia 31 de janeiro de 1996
+                com o total de 291 episódios,[3] antes de ser dublada em diversos territórios ao redor do mundo,
+                incluindo Estados Unidos, Austrália, Europa, Índia e América Latina. A série já foi exibida em mais de
+                80 países ao redor do mundo.[4]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button fw-bold" data-bs-toggle="collapse" data-bs-target="#resposta2">Quem criou
+              Berserk ?</button>
+          </div>
+          <div id="resposta2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Berserk (ベルセルク Beruseruku?) é uma série de mangá escrita e ilustrada por Kentaro Miura. Situado em um
+                mundo de fantasia sombria inspirado na Europa medieval, a história gira em torno de Guts, um solitário
+                mercenário, e Griffith, o líder de um bando de mercenários chamado de "Bando do Falcão". Miura publicou
+                um one-shot de Berserk em 1988. A série começou a ter os seus capítulos publicados no ano seguinte na
+                agora extinta revista Monthly Animal House, que foi substituída em 1992 pela revista bimestral Young
+                Animal, onde Berserk continua a ser serializado intermitentemente. Miura faleceu em maio de 2021, o
+                capítulo final que ele escreveu e ilustrou foi publicado postumamente em setembro do mesmo ano; a série
+                foi retomada em junho de 2022, sob a supervisão do colega e amigo de infância de Miura, Kouji Mori, e do
+                grupo de assistentes e aprendizes de Miura do Studio Gaga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
